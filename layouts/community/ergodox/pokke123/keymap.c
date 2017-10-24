@@ -5,6 +5,7 @@
 #define BASE 0 // default layer
 #define SYMB 1 // symbols
 #define MDIA 2 // media keys
+#undef TAPPING_TOGGLE
 #define TAPPING_TOGGLE 2
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
@@ -40,7 +41,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   MO(1),      KC_GRV,  KC_QUOT,  KC_BSLS,  MO(2),
 
                                                KC_HOME,   KC_END,
-                                                          KC_ALT,
+                                                          KC_LALT,
                                       KC_SPC,  KC_ENT,   KC_LGUI,
 
   // right hand
